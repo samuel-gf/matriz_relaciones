@@ -1,7 +1,7 @@
-Annika		0	1	0	0	0	0	0
-Argolad		0	0	0	0	0	0	0
-Mikael		0	0	0	0	0	0	0
-Señor Lund	0	0	0	0	0	0	0
-Sindia		0	0	0	0	0	0	0
-Ulf			0	0	0	0	0	0	0
-Zuk			3	1	3	0	0	0	0
+Annika		-	-	-	+	o	o	o
+Argolad		r1	r1	++	r1	o	r1	r1
+Mikael		r1	+	o	r1	o	r1	r1
+Señor Lund	r1	r1	r1	-	o	r1	r1
+Sindia		r1	-	-	r1	o	r1	r1
+Ulf			r1	-	-	r1	o	+	r1
+Zuk			r1	-	r1	o	o	o	o
