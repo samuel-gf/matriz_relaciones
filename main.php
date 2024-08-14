@@ -51,8 +51,14 @@ function iteracion(&$a){
 function get_delta($rel, $apego){
 	$delta = 0;
 	switch($apego){
-	case -1:		# Cada vez me cae peor
+	case 1:		# Cada vez me cae peor
 		$delta = -1;
+		break;
+	case 2:		# Cada vez me cae mejor
+		$delta = +1;
+		break;
+	case 3:	# Estable pero aleatorio entre -1 y +1
+		$delta = rand(-1, 1);
 		break;
 	default:		# Apego lineal
 		if ($rel > 0) $delta = -1;
@@ -60,6 +66,12 @@ function get_delta($rel, $apego){
 		break;
 	}
 	return $delta;
+}
+
+# Una persona influye en otra
+function influye($de, $hacia, $apego){
+	$delta = get_delta($a[$de][$hacia]['relación'], $apego);
+	$a[$de][$hacia]['relación'] += $delta;
 }
 
 function get_array_valores($max){
